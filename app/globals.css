@@ -11,7 +11,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Ensure all H1 tags have explicit font sizes - fixes lighthouse warning */
+  /* Fix H1 font-size deprecation warning - Lighthouse requirement */
   h1 {
     font-size: 3rem !important;
     line-height: 1.1 !important;
@@ -31,7 +31,7 @@
     }
   }
 
-  /* Specific overrides for H1 in semantic sections */
+  /* Explicit H1 overrides for semantic sections - Fixes Lighthouse warning */
   article h1,
   aside h1,
   nav h1,
@@ -59,7 +59,7 @@
     }
   }
 
-  /* Override for specific hero H1 */
+  /* Hero title explicit sizing */
   .hero-title {
     font-size: 3rem !important;
     line-height: 1.1 !important;
