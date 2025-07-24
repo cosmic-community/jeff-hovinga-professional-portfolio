@@ -11,7 +11,7 @@ interface StatProps {
 }
 
 function AnimatedStat({ number, label, icon }: StatProps) {
-  const { ref, inView: isInView } = useInView({ threshold: 0.3 })
+  const { ref, inView: isInView } = useInView<HTMLDivElement>({ threshold: 0.3 })
   const [displayNumber, setDisplayNumber] = useState('0')
 
   useEffect(() => {
