@@ -24,8 +24,8 @@ const contactMethods = [
     icon: '📱',
     title: 'Phone',
     description: 'Call for immediate response',
-    value: '+1 (555) 123-4567',
-    action: 'tel:+15551234567',
+    value: '+1 (616) 780-9226',
+    action: 'tel:+16167809226',
     gradient: 'from-green-500 to-green-600'
   },
 ]
