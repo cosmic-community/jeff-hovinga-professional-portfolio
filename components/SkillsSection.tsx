@@ -67,7 +67,7 @@ export default function SkillsSection() {
               Professional Skills
             </h3>
             
-            <div ref={skillsRef} className="space-y-8">
+            <div ref={skillsRef as React.RefObject<HTMLDivElement>} className="space-y-8">
               {skills.map((skill, index) => (
                 <div
                   key={skill.name}

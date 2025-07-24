@@ -19,6 +19,8 @@ export function useInView(options: UseInViewOptions = {}) {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        if (!entry) return // Guard against undefined entry
+        
         const isIntersecting = entry.isIntersecting
         setInView(isIntersecting)
         

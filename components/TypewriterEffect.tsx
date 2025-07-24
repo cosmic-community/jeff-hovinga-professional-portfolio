@@ -23,6 +23,8 @@ export default function TypewriterEffect({
 
   useEffect(() => {
     const targetText = texts[currentTextIndex]
+    
+    if (!targetText) return // Guard against undefined targetText
 
     const timeout = setTimeout(() => {
       if (!isDeleting) {

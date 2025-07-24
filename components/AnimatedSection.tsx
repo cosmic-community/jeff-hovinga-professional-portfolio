@@ -26,7 +26,7 @@ export default function AnimatedSection({
 
   return (
     <div
-      ref={ref}
+      ref={ref as React.RefObject<HTMLDivElement>}
       className={`${className} ${
         inView ? animationClasses[animation] : 'opacity-0'
       }`}
