@@ -5,8 +5,12 @@ import WorkExperienceSection from '@/components/WorkExperienceSection'
 import EducationSection from '@/components/EducationSection'
 import CertificationsSection from '@/components/CertificationsSection'
 import RecommendationsSection from '@/components/RecommendationsSection'
+import SkillsSection from '@/components/SkillsSection'
+import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 import LoadingSpinner from '@/components/LoadingSpinner'
+import ScrollProgress from '@/components/ScrollProgress'
+import FloatingElements from '@/components/FloatingElements'
 
 export default async function Home() {
   // Fetch all data in parallel
@@ -19,36 +23,47 @@ export default async function Home() {
   ])
 
   return (
-    <main className="min-h-screen">
-      <Suspense fallback={<LoadingSpinner />}>
-        {/* Hero Section */}
-        {portfolio && (
-          <Hero portfolio={portfolio} />
-        )}
+    <>
+      <ScrollProgress />
+      <FloatingElements />
+      
+      <main className="min-h-screen relative">
+        <Suspense fallback={<LoadingSpinner />}>
+          {/* Hero Section */}
+          {portfolio && (
+            <Hero portfolio={portfolio} />
+          )}
 
-        {/* Work Experience Section */}
-        {workExperience.length > 0 && (
-          <WorkExperienceSection experiences={workExperience} />
-        )}
+          {/* Skills Section */}
+          <SkillsSection />
 
-        {/* Education Section */}
-        {education.length > 0 && (
-          <EducationSection education={education} />
-        )}
+          {/* Work Experience Section */}
+          {workExperience.length > 0 && (
+            <WorkExperienceSection experiences={workExperience} />
+          )}
 
-        {/* Certifications Section */}
-        {certifications.length > 0 && (
-          <CertificationsSection certifications={certifications} />
-        )}
+          {/* Education Section */}
+          {education.length > 0 && (
+            <EducationSection education={education} />
+          )}
 
-        {/* Recommendations Section */}
-        {recommendations.length > 0 && (
-          <RecommendationsSection recommendations={recommendations} />
-        )}
+          {/* Certifications Section */}
+          {certifications.length > 0 && (
+            <CertificationsSection certifications={certifications} />
+          )}
 
-        {/* Footer */}
-        <Footer />
-      </Suspense>
-    </main>
+          {/* Recommendations Section */}
+          {recommendations.length > 0 && (
+            <RecommendationsSection recommendations={recommendations} />
+          )}
+
+          {/* Contact Section */}
+          <ContactSection />
+
+          {/* Footer */}
+          <Footer />
+        </Suspense>
+      </main>
+    </>
   )
 }
