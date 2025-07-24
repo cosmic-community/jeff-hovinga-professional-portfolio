@@ -6,10 +6,10 @@ interface UseInViewOptions {
   triggerOnce?: boolean
 }
 
-export function useInView(options: UseInViewOptions = {}) {
+export function useInView<T extends HTMLElement = HTMLElement>(options: UseInViewOptions = {}) {
   const [inView, setInView] = useState(false)
   const [hasTriggered, setHasTriggered] = useState(false)
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<T>(null)
 
   const { threshold = 0.1, rootMargin = '0px', triggerOnce = true } = options
 
