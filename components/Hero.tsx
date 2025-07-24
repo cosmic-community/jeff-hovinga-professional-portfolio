@@ -54,7 +54,7 @@ export default function Hero({ portfolio }: HeroProps) {
             {/* Profile Information */}
             <div className="flex-1 text-center lg:text-left">
               <AnimatedSection animation="fadeInUp">
-                <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 text-shadow-lg">
+                <h1 className="hero-title text-white mb-6 text-shadow-lg">
                   {metadata.full_name}
                 </h1>
               </AnimatedSection>
