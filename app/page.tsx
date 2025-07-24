@@ -5,7 +5,6 @@ import WorkExperienceSection from '@/components/WorkExperienceSection'
 import EducationSection from '@/components/EducationSection'
 import CertificationsSection from '@/components/CertificationsSection'
 import RecommendationsSection from '@/components/RecommendationsSection'
-import SkillsSection from '@/components/SkillsSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 import LoadingSpinner from '@/components/LoadingSpinner'
@@ -33,9 +32,6 @@ export default async function Home() {
           {portfolio && (
             <Hero portfolio={portfolio} />
           )}
-
-          {/* Skills Section */}
-          <SkillsSection />
 
           {/* Work Experience Section */}
           {workExperience.length > 0 && (
