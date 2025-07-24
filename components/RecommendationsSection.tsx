@@ -70,6 +70,8 @@ export default function RecommendationsSection({ recommendations }: Recommendati
                         width="70"
                         height="70"
                         className="rounded-full shadow-lg border-4 border-white group-hover:scale-110 transition-transform duration-300"
+                        crossOrigin="anonymous"
+                        referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>

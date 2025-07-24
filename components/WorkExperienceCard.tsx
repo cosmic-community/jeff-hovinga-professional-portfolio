@@ -37,6 +37,8 @@ export default function WorkExperienceCard({ experience, index }: WorkExperience
                   width="100"
                   height="100"
                   className="rounded-xl shadow-lg"
+                  crossOrigin="anonymous"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

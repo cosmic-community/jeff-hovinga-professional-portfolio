@@ -46,6 +46,8 @@ export default function Hero({ portfolio }: HeroProps) {
                     width="400"
                     height="400"
                     className="relative rounded-full shadow-2xl border-8 border-white/20 group-hover:scale-105 transition-transform duration-500"
+                    crossOrigin="anonymous"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
               )}
