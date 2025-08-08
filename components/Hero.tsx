@@ -26,13 +26,13 @@ export default function Hero({ portfolio }: HeroProps) {
 
       {/* Floating geometric shapes with enhanced animations */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/30 to-purple-500/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/25 to-pink-500/20 rounded-full blur-3xl animate-float animation-delay-200"></div>
-        <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-gradient-to-r from-pink-500/20 to-blue-500/25 rounded-full blur-3xl animate-float animation-delay-400"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-emerald-500/30 to-green-500/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-green-500/25 to-teal-500/20 rounded-full blur-3xl animate-float animation-delay-200"></div>
+        <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-gradient-to-r from-teal-500/20 to-emerald-500/25 rounded-full blur-3xl animate-float animation-delay-400"></div>
         
         {/* Additional floating elements */}
-        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-gradient-to-r from-cyan-400/20 to-blue-400/20 rounded-full blur-2xl animate-float animation-delay-600"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-48 h-48 bg-gradient-to-r from-indigo-500/15 to-purple-500/15 rounded-full blur-3xl animate-float animation-delay-800"></div>
+        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-gradient-to-r from-green-400/20 to-emerald-400/20 rounded-full blur-2xl animate-float animation-delay-600"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-48 h-48 bg-gradient-to-r from-forest-500/15 to-green-500/15 rounded-full blur-3xl animate-float animation-delay-800"></div>
       </div>
 
       <div className="section-padding w-full relative z-10">
@@ -43,9 +43,9 @@ export default function Hero({ portfolio }: HeroProps) {
               {metadata.profile_photo && (
                 <div className="relative group">
                   {/* Multiple glow layers for depth */}
-                  <div className="absolute -inset-8 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-1000 animate-pulse-slow"></div>
-                  <div className="absolute -inset-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full blur-xl opacity-40 group-hover:opacity-80 transition-all duration-1000 animation-delay-200"></div>
-                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
+                  <div className="absolute -inset-8 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-1000 animate-pulse-slow"></div>
+                  <div className="absolute -inset-6 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 rounded-full blur-xl opacity-40 group-hover:opacity-80 transition-all duration-1000 animation-delay-200"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
                   
                   {/* Main image */}
                   <div className="relative">
@@ -60,7 +60,7 @@ export default function Hero({ portfolio }: HeroProps) {
                     />
                     
                     {/* Rotating border effect */}
-                    <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow"></div>
+                    <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow"></div>
                   </div>
                 </div>
               )}
@@ -71,7 +71,7 @@ export default function Hero({ portfolio }: HeroProps) {
               <AnimatedSection animation="fadeInUp">
                 <h1 className="hero-title text-white mb-6 text-shadow-lg relative">
                   <span className="relative z-10">{metadata.full_name}</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 blur-3xl -z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 via-green-400/20 to-teal-400/20 blur-3xl -z-10"></div>
                 </h1>
               </AnimatedSection>
               
@@ -82,7 +82,7 @@ export default function Hero({ portfolio }: HeroProps) {
                     typingSpeed={80}
                     deletingSpeed={40}
                     pauseTime={2000}
-                    className="bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent animate-gradient text-shadow"
+                    className="bg-gradient-to-r from-emerald-300 via-green-300 to-teal-300 bg-clip-text text-transparent animate-gradient text-shadow"
                   />
                 </div>
               </AnimatedSection>
@@ -91,11 +91,11 @@ export default function Hero({ portfolio }: HeroProps) {
                 {metadata.location && (
                   <p className="text-gray-200 mb-8 flex items-center justify-center lg:justify-start gap-3 text-lg">
                     <span className="relative">
-                      <svg className="w-6 h-6 text-blue-400 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-emerald-400 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <div className="absolute inset-0 bg-blue-400/30 blur-lg"></div>
+                      <div className="absolute inset-0 bg-emerald-400/30 blur-lg"></div>
                     </span>
                     <span className="font-medium">{metadata.location}</span>
                   </p>
@@ -120,8 +120,8 @@ export default function Hero({ portfolio }: HeroProps) {
                       className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-500 overflow-hidden"
                     >
                       {/* Animated background */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-size-200 animate-gradient-shift"></div>
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-size-200 animate-gradient-shift"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-600 bg-size-200 animate-gradient-shift"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-teal-600 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-size-200 animate-gradient-shift"></div>
                       
                       {/* Content */}
                       <span className="relative z-10 flex items-center gap-3 text-white">
@@ -132,7 +132,7 @@ export default function Hero({ portfolio }: HeroProps) {
                       </span>
                       
                       {/* Hover glow effect */}
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 blur-xl transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-emerald-400/20 via-green-400/20 to-teal-400/20 blur-xl transition-opacity duration-500"></div>
                     </a>
                   )}
 
