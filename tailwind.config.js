@@ -13,9 +13,9 @@ module.exports = {
         'cosmic-dark-hover': '#1a2326',
         'glass-white': 'rgba(255, 255, 255, 0.1)',
         'glass-border': 'rgba(255, 255, 255, 0.2)',
-        'glow-blue': 'rgba(59, 130, 246, 0.4)',
-        'glow-purple': 'rgba(147, 51, 234, 0.4)',
-        'glow-pink': 'rgba(236, 72, 153, 0.4)',
+        'glow-green': 'rgba(34, 197, 94, 0.4)',
+        'glow-emerald': 'rgba(16, 185, 129, 0.4)',
+        'glow-teal': 'rgba(20, 184, 166, 0.4)',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
@@ -76,10 +76,10 @@ module.exports = {
         },
         glowPulse: {
           '0%': { 
-            boxShadow: '0 0 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.2)' 
+            boxShadow: '0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2)' 
           },
           '100%': { 
-            boxShadow: '0 0 40px rgba(59, 130, 246, 0.6), 0 0 80px rgba(59, 130, 246, 0.3)' 
+            boxShadow: '0 0 40px rgba(34, 197, 94, 0.6), 0 0 80px rgba(34, 197, 94, 0.3)' 
           },
         },
       },
@@ -88,26 +88,26 @@ module.exports = {
         '3xl': '64px',
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(59, 130, 246, 0.5)',
-        'glow-lg': '0 0 30px rgba(59, 130, 246, 0.6)',
-        'glow-xl': '0 0 40px rgba(59, 130, 246, 0.7)',
-        'glow-purple': '0 0 20px rgba(147, 51, 234, 0.5)',
-        'glow-purple-lg': '0 0 30px rgba(147, 51, 234, 0.6)',
-        'glow-pink': '0 0 20px rgba(236, 72, 153, 0.5)',
-        'glow-pink-lg': '0 0 30px rgba(236, 72, 153, 0.6)',
+        'glow': '0 0 20px rgba(34, 197, 94, 0.5)',
+        'glow-lg': '0 0 30px rgba(34, 197, 94, 0.6)',
+        'glow-xl': '0 0 40px rgba(34, 197, 94, 0.7)',
+        'glow-emerald': '0 0 20px rgba(16, 185, 129, 0.5)',
+        'glow-emerald-lg': '0 0 30px rgba(16, 185, 129, 0.6)',
+        'glow-teal': '0 0 20px rgba(20, 184, 166, 0.5)',
+        'glow-teal-lg': '0 0 30px rgba(20, 184, 166, 0.6)',
         'glass': '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
         'glass-lg': '0 20px 40px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
         'floating': '0 10px 25px rgba(0, 0, 0, 0.1), 0 20px 48px rgba(0, 0, 0, 0.1)',
-        'floating-hover': '0 20px 40px rgba(59, 130, 246, 0.2), 0 30px 60px rgba(147, 51, 234, 0.15)',
+        'floating-hover': '0 20px 40px rgba(34, 197, 94, 0.2), 0 30px 60px rgba(16, 185, 129, 0.15)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-primary': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'gradient-secondary': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        'gradient-tertiary': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #059669 0%, #065f46 100%)',
+        'gradient-secondary': 'linear-gradient(135deg, #10b981 0%, #047857 100%)',
+        'gradient-tertiary': 'linear-gradient(135deg, #14b8a6 0%, #0f766e 100%)',
         'gradient-dark': 'linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%)',
-        'mesh-gradient': 'radial-gradient(at 40% 20%, hsla(228,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%)',
+        'mesh-gradient': 'radial-gradient(at 40% 20%, hsla(160,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(180,100%,56%,1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(140,100%,93%,1) 0px, transparent 50%), radial-gradient(at 80% 50%, hsla(170,100%,76%,1) 0px, transparent 50%), radial-gradient(at 0% 100%, hsla(150,100%,77%,1) 0px, transparent 50%), radial-gradient(at 80% 100%, hsla(160,100%,70%,1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(175,100%,76%,1) 0px, transparent 50%)',
       },
       perspective: {
         '1000': '1000px',
