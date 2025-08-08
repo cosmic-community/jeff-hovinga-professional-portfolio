@@ -33,13 +33,13 @@ export const glowColors = {
 export function getRandomGradient(): string {
   const gradientKeys = Object.keys(gradients) as (keyof typeof gradients)[]
   const randomKey = gradientKeys[Math.floor(Math.random() * gradientKeys.length)]
-  return gradients[randomKey]
+  return randomKey ? gradients[randomKey] : gradients.primary
 }
 
 export function getRandomGlowColor(): string {
   const glowKeys = Object.keys(glowColors) as (keyof typeof glowColors)[]
   const randomKey = glowKeys[Math.floor(Math.random() * glowKeys.length)]
-  return glowColors[randomKey]
+  return randomKey ? glowColors[randomKey] : glowColors.blue
 }
 
 export function createCustomGradient(colors: string[], direction: number = 135): string {
