@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  /* Custom CSS Variables for Dynamic Colors */
-  --primary-gradient: linear-gradient(135deg, #059669 0%, #065f46 100%);
-  --secondary-gradient: linear-gradient(135deg, #10b981 0%, #047857 100%);
-  --tertiary-gradient: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+  /* Custom CSS Variables for Dynamic Colors - Softer Green Palette */
+  --primary-gradient: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  --secondary-gradient: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  --tertiary-gradient: linear-gradient(135deg, #6ee7b7 0%, #10b981 100%);
   --dark-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
   --glass-bg: rgba(255, 255, 255, 0.1);
   --glass-border: rgba(255, 255, 255, 0.2);
-  --glow-green: rgba(34, 197, 94, 0.4);
-  --glow-emerald: rgba(16, 185, 129, 0.4);
-  --glow-teal: rgba(20, 184, 166, 0.4);
+  --glow-green: rgba(52, 211, 153, 0.3);
+  --glow-emerald: rgba(110, 231, 183, 0.3);
+  --glow-teal: rgba(45, 212, 191, 0.3);
 }
 
 @layer base {
@@ -23,7 +23,7 @@
   
   body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #059669 0%, #065f46 100%);
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
     background-attachment: fixed;
     overflow-x: hidden;
   }
@@ -125,23 +125,23 @@
 
   .glass-button:hover {
     box-shadow: 
-      0 8px 32px rgba(34, 197, 94, 0.3),
+      0 8px 32px rgba(52, 211, 153, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
 
-  /* Gradient Text Effects */
+  /* Gradient Text Effects - Softer Green Palette */
   .gradient-text {
-    @apply bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-emerald-300 via-green-300 to-teal-300 bg-clip-text text-transparent;
     background-size: 200% 200%;
     animation: gradientShift 3s ease infinite;
   }
 
   .gradient-text-green {
-    @apply bg-gradient-to-r from-green-400 via-emerald-400 to-green-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-emerald-300 via-green-300 to-emerald-400 bg-clip-text text-transparent;
   }
 
   .gradient-text-emerald {
-    @apply bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent;
   }
 
   /* Shadow Effects */
@@ -165,9 +165,9 @@
     box-shadow: 0 0 20px var(--glow-teal);
   }
 
-  /* Section Titles */
+  /* Section Titles - Softer Green Palette */
   .section-title {
-    @apply text-4xl lg:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent;
+    @apply text-4xl lg:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 bg-clip-text text-transparent;
   }
 
   /* Interactive Card Effects */
@@ -180,8 +180,8 @@
 
   .floating-card:hover {
     box-shadow: 
-      0 20px 40px rgba(34, 197, 94, 0.2),
-      0 30px 60px rgba(16, 185, 129, 0.15);
+      0 20px 40px rgba(52, 211, 153, 0.15),
+      0 30px 60px rgba(110, 231, 183, 0.1);
   }
 
   /* Animation Classes */
@@ -416,7 +416,7 @@
   }
 }
 
-/* Scrollbar Styling */
+/* Scrollbar Styling - Softer Green Palette */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -426,22 +426,22 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #22c55e, #10b981, #14b8a6);
+  background: linear-gradient(45deg, #34d399, #10b981, #6ee7b7);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #16a34a, #059669, #0d9488);
+  background: linear-gradient(45deg, #10b981, #047857, #34d399);
 }
 
-/* Selection Styling */
+/* Selection Styling - Softer Green Palette */
 ::selection {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(52, 211, 153, 0.25);
   color: white;
 }
 
 ::-moz-selection {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(52, 211, 153, 0.25);
   color: white;
 }
 
@@ -482,13 +482,13 @@
   }
 }
 
-/* Focus Styles for Accessibility */
+/* Focus Styles for Accessibility - Softer Green Palette */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid #22c55e;
+  outline: 2px solid #34d399;
   outline-offset: 2px;
 }
 
